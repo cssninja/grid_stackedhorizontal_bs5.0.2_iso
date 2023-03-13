@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>grid_stackedhorizonal_bs5.0.2_iso</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- slight modifications to bs5.0.2_iso/bootstrap-isolated.css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet"/>
+    <style>
+    /* mobile toggle button border/outline .. had to use brave insepct (UN-minifies!) and found on line 499 in docs.css, https://getbootstrap.com/docs/5.0/assets/css/docs.css which is example mode bootstrap styles */
+    .row>.col, .row>[class^="col-"] {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(39,41,43,0.03);
+    border: 1px solid rgba(39,41,43,0.1)
+    }
+    .row {
+      padding:10px;
+    }
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif !important;
+    }
+    </style>
+
+    <!-- original bs cdn -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/> -->
+    <!-- bs5.0.2 iso .. thanks to: https://github.com/franky920920/bootstrap-5-isolated -->
+    <link rel="stylesheet" href="https://pionezero.com/bs5.0.2_iso/bootstrap-isolated.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="bs5">
+
+      <!-- thanks to: https://getbootstrap.com/docs/5.0/layout/grid/#stacked-to-horizontal -->
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-8">col-sm-8</div>
+        <div class="col-sm-4">col-sm-4</div>
+      </div>
+      <div class="row">
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+      </div>
+      </div>
+
+    </div>
+  </body>
+  
+</html>
